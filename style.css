@@ -1,9 +1,34 @@
+body {
+    background-color: #F1FAEE;
+    margin: 0px;
+}
+nav {
+    background-color: #231942;
+    padding: 0px 20px;
+    }
+nav ol{
+justify-content: space-between;
+list-style: none;
+padding: 0px 700px;
+}
+ol:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
 .main-Part {
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
-    color: #231942;
+    color: #0a579e;
 }
-
+ol, ol li a {
+    font-size: 20px;
+    color: #0a579e;
+        /* Falta ignorar o sublinhado e os numeros da lista */
+}
+nav ol {
+    display: flex;
+    flex-direction: row;
+}
 .Introduction {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -13,9 +38,9 @@
 h1 {
     font-size: 80px;
     font-family: 'Roboto Mono', monospace;
-    color: #231942;
+    color: #0a579e;
 }
 
-body {
-    background-color: #F1FAEE;
+img{
+    border-radius: 40%;
 }
