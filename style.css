@@ -1,21 +1,21 @@
-    .main-Part {
-        font-family: 'Roboto Mono', monospace;
-        font-size: 30px;
-        color: #231942;
-    }
+.main-Part {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    color: #231942;
+}
 
-    .Introduction {
-        font-family: 'Roboto', sans-serif;
-        font-size: 18px;
-        color: #457B9D;
-    }
+.Introduction {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #457B9D;
+}
 
-    h1 {
-        font-size: 80px;
-        font-family: 'Roboto Mono', monospace;
-        color: #231942;
-    }
+h1 {
+    font-size: 80px;
+    font-family: 'Roboto Mono', monospace;
+    color: #231942;
+}
 
-    body {
-        background-color: #F1FAEE;
-    }
+body {
+    background-color: #F1FAEE;
+}
