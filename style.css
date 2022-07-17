@@ -1,46 +1,52 @@
-body {
-    background-color: #F1FAEE;
+body{
     margin: 0px;
-}
-nav {
-    background-color: #231942;
-    padding: 0px 20px;
+    background-color: #DEE2E6;
     }
-nav ol{
-justify-content: space-between;
-list-style: none;
-padding: 0px 700px;
+nav, nav ol li a{
+    background-color: #012A4A;
+    padding: 0px 20px;
+    color: #DEE2E6;
+    justify-content: space-between;
+    align-items: center;
 }
-ol:hover {
-    cursor: pointer;
-    opacity: 0.5;
-}
-.main-Part {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 30px;
-    color: #0a579e;
-}
-ol, ol li a {
-    font-size: 20px;
-    color: #0a579e;
-        /* Falta ignorar o sublinhado e os numeros da lista */
-}
-nav ol {
+nav, ol{
     display: flex;
     flex-direction: row;
 }
-.Introduction {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: #457B9D;
+ol{
+    list-style: none;
+    padding: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+ol li{
+    padding: 0px 20px;
+    font-size: 30px;
+}
+ol li a:hover, button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+button{
+    background-color: transparent;
+    border: none;
+    color: #DEE2E6;
+    font-size: 40px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+button:focus ~ ol{
+    height: fit-content;
+}
+@media (max-width: 700px) {
+    nav, nav ol{
+        flex-direction: column;
+        align-items: unset;
+
+    }
+    ol{
+        text-align: center;
+    }
 }
 
-h1 {
-    font-size: 80px;
-    font-family: 'Roboto Mono', monospace;
-    color: #0a579e;
-}
-
-img{
-    border-radius: 40%;
-}
