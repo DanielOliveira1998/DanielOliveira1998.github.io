@@ -15,15 +15,18 @@ nav, ol{
 }
 ol{
     list-style: none;
+    margin: 0px;
     padding: 0px;
     height: 0px;
     overflow: hidden;
+    transition: all 0.5s;
+    
 }
 ol li{
-    padding: 0px 20px;
+    padding: 0px 40px;
     font-size: 30px;
 }
-ol li a:hover, button:hover{
+ol li a:hover, button:hover, ul li a:hover{
     cursor: pointer;
     opacity: 0.8;
 }
@@ -37,9 +40,12 @@ button{
     top: 25px;
 }
 button:focus ~ ol{
-    height: 250px;
+    height: 50px;
 }
-@media (max-width: 700px) {
+@media (max-width: 1496px) {
+    button:focus ~ ol{
+        height: 250px;
+    }
     nav, nav ol{
         flex-direction: column;
         align-items: unset;
@@ -47,6 +53,7 @@ button:focus ~ ol{
     }
     ol{
         text-align: center;
+        justify-content: space-around;
     }
 }
 h1{
@@ -54,17 +61,20 @@ h1{
     font-family: 'Roboto Mono', monospace;
 }
 h3{
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Roboto Mono', monospace;
     color: #012A4A;
 }
 p, ul, ul li a{
     font-size: 20px;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #012A4A;
 }
 img{
     padding: 20px;
     border-radius: 40%;
+}
+a{
+    text-decoration: none;
 }
 
